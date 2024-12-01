@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Here you can upload your meter readings CSV file.</p>
+    <p><input type="file" id="selectedFile" accept=".csv" /></p>
+    <p><button id="btnSubmit">Upload file</button></p>
+    <div id="results">
+        <table>
+            <tr>
+                <td class="resultLabel">Successful:</td>
+                <td id="successCount"></td>
+            </tr>
+            <tr>
+                <td class="resultLabel">Failed:</td>
+                <td id="failureCount"></td>
+            </tr>
+        </table>
+    </div>
+</div>
